@@ -13,6 +13,8 @@ module.exports = {
       },
       colors: {
         appBlue: {
+          extraLight: '#CDDEFF',
+          light: '#83ABFF',
           DEFAULT: '#18233A',
         },
         appGreen: {

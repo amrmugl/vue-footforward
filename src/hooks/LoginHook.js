@@ -5,7 +5,7 @@ const useAuthForm = () => {
   const router = useRouter()
   const submitLogin = async (values, formError) => {
     try {
-      await axios.post('/auth/signin/username', values)
+      await axios.post('/auth/signin/ad', values)
       router.push('/admin')
     } catch (error) {
       if (error) {

@@ -21,7 +21,6 @@ const requireAdminLoginAuth = (to, from, next) => {
   const date = new Date()
   date.setTime(date.getTime() + 15 * 60 * 1000)
   if (Boolean(isLogged) === false || Boolean(isAdmin) === false) {
-    cookies.cookies.set('FootforwardIsAdmin', 'true', date)
     next()
   } else {
     next({ path: '/admin' })

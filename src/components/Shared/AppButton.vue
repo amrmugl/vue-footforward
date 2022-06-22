@@ -8,6 +8,7 @@
   /></router-link>
   <button
     class="transition-all focus:outline-none active:outline-none"
+    :disabled="disabled"
     v-else
     @click="$emit('btnClicked')"
     :class="classes"
@@ -22,5 +23,6 @@ defineProps({
   classes: String,
   type: String,
   to: String,
+  disabled: Boolean,
 })
 </script>
